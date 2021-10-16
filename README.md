@@ -1,4 +1,4 @@
-# didactic-octo-succotash
+# temporary-sshd
 
 If you frequently SSH to an online service like GitHub, some firewalls and security gateways may block your connections. In this case you may see an error like:
 
