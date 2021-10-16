@@ -1,28 +1,24 @@
 # didactic-octo-succotash
 
-Having trouble accessing a service online?
-
-Use a temporary service in the cloud to quickly rule out issues in your local network.
-
-## Prerequisites
-
-The instructions below assume you're already set up to use ngrok.io and Docker.
-
-Use [Docker Desktop](https://www.docker.com/products/docker-desktop) in macOS and Windows. Follow [instructions on docker.com](https://docs.docker.com/engine/install/) to install Docker in Linux.
-
-If you haven't created an ngrok account yet, [go ahead and do that](https://dashboard.ngrok.com/signup).
-
-## SSH Server
-
 If you frequently SSH to an online service like GitHub, some firewalls and security gateways may block your connections. In this case you may see an error like:
 
 ```text
 kex_exchange_identification: Connection closed by remote host
 ```
 
-To determine whether it's the remote service blocking the connection, or something on your end, make a temporary SSH server available in the cloud and check whether you can connect to it.
+To determine whether it's the remote service blocking the connection, or something on your end, make a temporary SSH server available and check whether you can connect to it.
 
-Visit [your ngrok dashboard](https://dashboard.ngrok.com/get-started/your-authtoken) and copy your authtoken. Then start the temporary SSH server make it available remotely:
+## Prerequisites
+
+The instructions below assume you're already set up to use ngrok and Docker.
+
+Use [Docker Desktop](https://www.docker.com/products/docker-desktop) in macOS and Windows. Follow [instructions on docker.com](https://docs.docker.com/engine/install/) to install Docker in Linux.
+
+If you haven't created an [ngrok](https://ngrok.com) account yet, [go ahead and do that](https://dashboard.ngrok.com/signup).
+
+## Instructions
+
+Visit [your ngrok dashboard](https://dashboard.ngrok.com/get-started/your-authtoken) and copy your authtoken. Then start the temporary SSH server and make it available remotely:
 
 ```bash
 _token="PasteYourTokenHere"
